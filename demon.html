@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/tablePlugin.css">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div id="table1"></div>
+	<div id="table2"></div>
+
+
+	
+</body>
+<script src = "js/jquery-2.2.4.min.js"></script>
+<script  src = "js/tablePlugin.js"></script>
+<script>
+	$(function(){
+		
+		var data = {
+					"state": 1,
+					"msg":"",
+					"data": [
+							{"id":"011","name":"zha","age":23,"grade":100,"sex":"man","hobby":"dance"},
+							{"id":"022","name":"start","age":33,"grade":100,"sex":"woman","hobby":"sleep"},
+							{"id":"333","name":"jame","age":25,"grade":100,"sex":"man","hobby":"read"},
+							{"id":"442","name":"xuanwu","age":27,"grade":160,"sex":"man","hobby":"read"},
+							{"id":"512","name":"xiaoming","age":20,"grade":100,"sex":"man","hobby":"watchTv"},
+							{"id":"634","name":"zha","age":"23","grade":100,"sex":"man","hobby":"read"},
+							{"id":"725","name":"start","age":33,"grade":100,"sex":"woman","hobby":"read"},
+							{"id":"854","name":"jame","age":25,"grade":100,"sex":"man","hobby":"read"},
+							{"id":"923","name":"xuanwu","age":27,"grade":160,"sex":"man","hobby":"read"},
+							{"id":"102","name":"xiaoming","age":20,"grade":100,"sex":"man","hobby":"watchTv"},
+							{"id":"115","name":"zha","age":"23","grade":100,"sex":"man","hobby":"read"},
+							{"id":"127","name":"start","age":33,"grade":100,"sex":"woman","hobby":"reada"}
+						]
+				}
+
+		$("#table1").tablePlugin({
+			//url : "JSON.txt",
+			data : data,
+			header : ["id","name","age","grade","sex","hobby","deleteBtn","changeBtn"],
+			headerContent : ["ID","姓名","年龄","成绩","性别","爱好","删除","改值"],
+			responsive : true,
+			//move : ["id","sex","age"],
+			btnContent : ["删除","更改"],
+			compareElement : "id"
+		});
+
+		
+	})
+	
+</script>
+</html>
