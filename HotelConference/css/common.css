@@ -1,0 +1,47 @@
+/*common css*/
+
+html,body,a,span,p,div,i,em,button,table,thead,tbody,tfoot,tr,td,form,textarea,h1,h2,h3,h4,h5,h6,nav,section,aside,article,ul,li,header,footer,img,input,select,option{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Microsoft YaHei",Arial;
+	font-size: 14px;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: none;
+	color: #333;
+}
+table{
+	border-collapse: collapse;
+}
+button{
+	outline: none;
+	cursor: pointer;
+}
+img{
+	border: 0px;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+aside{
+	min-width: 90px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+}
+section{
+	height:100%;
+	background-color:#eaeaea;
+	margin-left:90px;
+}
+
+
+/*侧边栏样式*/
